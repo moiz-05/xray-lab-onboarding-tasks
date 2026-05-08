@@ -1,0 +1,67 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OpenMMLab / MMDetection external checkout
+mmdetection/
+
+# Training outputs and logs
+outputs/
+work_dirs/
+runs/
+logs/
+*.log
+events.out.tfevents.*
+
+# Model weights and checkpoints
+checkpoints/
+*.pth
+*.pt
+*.onnx
+*.engine
+*.ckpt
+
+# Dataset image folders and generated data
+dataset/train/
+dataset/valid/
+dataset/val/
+dataset/test/
+dataset/images/
+dataset/labels/
+dataset/cache/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+
+# Keep COCO annotation files trackable
+!dataset/*.json
+!dataset/**/_annotations.coco.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
