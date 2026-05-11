@@ -1,0 +1,8 @@
+venv/
+dataset/
+checkpoints/
+logs/
+onnx/models/
+mmdetection/
+__pycache__/
+*.pyc

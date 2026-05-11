@@ -5,7 +5,7 @@ from mmdet.registry import RUNNERS
 
 ROOT = Path(__file__).resolve().parents[1]
 
-config_path = ROOT / 'mmdetection/configs/rtmdet/rtmdet_tiny_8xb32-300e_coco.py'
+config_path = ROOT / 'mmdetection/configs/rtmdet/rtmdet_s_8xb32-300e_coco.py'
 
 cfg = Config.fromfile(str(config_path))
 
