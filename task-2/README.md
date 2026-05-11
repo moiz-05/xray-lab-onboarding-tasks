@@ -128,6 +128,35 @@ outputs/epoch_2.pth
 
 The run also creates MMEngine log folders inside `outputs/`.
 
+## Training Results
+
+Training was performed for 2 epochs on CPU. Below are the training logs and
+evaluation metrics:
+
+### Training Logs
+
+| Epoch | Iter | LR | Loss | LossCls | LossBBox |
+|-------|------|-----|------|---------|----------|
+| 1 | 50 | 1.96e-04 | 0.1009 | 0.0343 | 0.0666 |
+| 1 | 100 | 3.96e-04 | 0.4896 | 0.1463 | 0.3433 |
+| 1 | 150 | 5.97e-04 | 1.0308 | 0.3134 | 0.7174 |
+| 2 | 50 | 9.65e-04 | 1.4731 | 0.4720 | 1.0011 |
+| 2 | 100 | 1.17e-03 | 1.6414 | 0.5680 | 1.0734 |
+| 2 | 150 | 1.37e-03 | 1.6292 | 0.5260 | 1.1033 |
+
+### Evaluation Metrics (Epoch 2)
+
+| Metric | Value |
+|--------|-------|
+| AP@IoU[0.50:0.95] | 0.008 |
+| AP@IoU=0.50 | 0.022 |
+| AP@IoU=0.75 | 0.005 |
+| AR@IoU[0.50:0.95] (maxDets=100) | 0.059 |
+
+The low AP values are expected given the extremely short training (2 epochs) on
+CPU. The model has not yet converged and would need more epochs and GPU
+acceleration for meaningful detection performance.
+
 ## Inference
 
 The inference script is:
