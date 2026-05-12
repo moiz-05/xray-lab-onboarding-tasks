@@ -1,0 +1,9 @@
+{
+    "warmup_runs": 100,
+    "benchmark_runs": 500,
+    "batch_sizes": [1, 2, 4, 8],
+    "default_height": 640,
+    "default_width": 640,
+    "workspace_size_gb": 4,
+    "enable_fp16": true
+}
